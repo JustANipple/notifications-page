@@ -1,8 +1,7 @@
 /* Custom properties */
-@use "variables";
+@use "variables" as *;
 /* Reset */
 @use "base";
 /* Layout */
 @use "layout";
-
 /* Components */

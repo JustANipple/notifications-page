@@ -1,22 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
-:root {
-  /* Font */
-  --ff: "Plus Jakarta Sans", sans-serif;
-  --fw-med: 500;
-  --fw-eb: 800;
-  --fs-par: 1rem;
-  /* Colors */
-  --dot: hsl(1, 90%, 64%);
-  --not-num-bg: hsl(219, 85%, 26%);
-  --not-cont-bg: hsl(0, 0%, 100%);
-  --not-unread: hsl(210, 60%, 98%);
-  --body-bg: hsl(211, 68%, 94%);
-  --message-hover: hsl(205, 33%, 90%);
-  --time: hsl(219, 14%, 63%);
-  --not-par: hsl(219, 12%, 42%);
-  --name: hsl(224, 21%, 14%);
-}
-
+/* Font */
+/* Colors */
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/

@@ -111,3 +111,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+**Put this in acknowledgments**
+https://stackoverflow.com/questions/67602149/in-a-partial-sass-file-how-can-i-use-a-variable-defined-in-the-parent
