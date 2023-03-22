@@ -55,7 +55,7 @@
         max-width: 2.5rem;
 
         @media screen and (min-width: v.$min-width) {
-            max-width: 3rem;
+            max-width: 2.75rem;
         }
     }
 
@@ -116,6 +116,14 @@
                 cursor: pointer;
                 transition: all .3s ease-in-out;
             }
+        }
+
+        .fa-circle {
+            position: relative;
+            bottom: 0.125rem;
+            font-size: 0.5rem;
+            color: v.$dot;
+            margin-inline-start: 0.25rem;
         }
     }
     

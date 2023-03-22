@@ -15,6 +15,7 @@ body {
 .container {
     background-color: v.$not-cont-bg;
     width: fit-content;
+    height: fit-content;
     padding: 1.25rem 1rem;
 
     @media screen and (min-width: v.$min-width) {
