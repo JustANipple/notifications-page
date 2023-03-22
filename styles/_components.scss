@@ -65,16 +65,32 @@
                 color: v.$name;
                 font-weight: v.$fw-eb;
                 margin-inline-end: 0.25rem;
+
+                &:hover {
+                    color: v.$not-num-bg;
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+                }
             }
 
             .group {
                 color: v.$not-num-bg;
                 font-weight: v.$fw-eb;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
             .post {
                 font-weight: v.$fw-eb;
                 margin-inline-start: 0.25rem;
+
+                &:hover {
+                    color: v.$not-num-bg;
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+                }
             }
         }
 
@@ -89,12 +105,23 @@
             padding: 1rem;
             margin-block: 0.5rem 0;
             line-height: 1.25;
+
+            &:hover {
+                background-color: v.$body-bg;
+                border-color: v.$body-bg;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+            }
         }
     }
     
     .chess {
         max-width: 2.5rem;
         margin-inline-start: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
