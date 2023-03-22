@@ -53,6 +53,10 @@
 
     .avatar {
         max-width: 2.5rem;
+
+        @media screen and (min-width: v.$min-width) {
+            max-width: 3rem;
+        }
     }
 
     .content {
