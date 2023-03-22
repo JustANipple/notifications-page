@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
 /* Font */
 /* Colors */
+/* Media query width */
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -38,6 +39,115 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: hsl(211, 68%, 94%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.875rem;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: fit-content;
+  padding: 1.5rem 1rem;
+}
+@media screen and (min-width: 44rem) {
+  .container {
+    padding-block: 2.25rem 0;
+    padding-inline: 2.063rem;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+
+.not-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notifications {
+  display: grid;
+  row-gap: 0.75rem;
+  margin-block-start: 1.563rem;
+}
+@media screen and (min-width: 44rem) {
+  .notifications {
+    row-gap: 0.625rem;
+    margin-block-start: 2.125rem;
+  }
+}
+
+/* ====== Header ====== */
+.not-bar .box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.not-bar .box .text {
+  color: hsl(224, 21%, 14%);
+}
+.not-bar .box .num {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  width: 2rem;
+  height: 1.625rem;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-bar .mark {
+  color: hsl(219, 12%, 42%);
+}
+.not-bar .mark:hover {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+/* ====== Notification ====== */
+.notification {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.notification .avatar {
+  max-width: 2.5rem;
+}
+.notification .content {
+  display: grid;
+  gap: 0.125rem;
+}
+.notification .content .text {
+  color: hsl(219, 12%, 42%);
+  line-height: 1.325;
+}
+.notification .content .text .name {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  margin-inline-end: 0.25rem;
+}
+.notification .content .text .post {
+  font-weight: 800;
+  margin-inline-start: 0.25rem;
+}
+.notification .content .time {
+  color: hsl(219, 14%, 63%);
 }
 
 /* Custom properties */

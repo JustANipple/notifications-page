@@ -1,0 +1,77 @@
+@use "variables" as v;
+
+/* ====== Header ====== */
+.not-bar {
+    .box {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .text {
+            color: v.$name;
+        }
+
+        .num {
+            background-color: v.$not-num-bg;
+            color: v.$not-cont-bg;
+            width: 2rem;
+            height: 1.625rem;
+            font-size: 1rem;
+            font-weight: v.$fw-eb;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    .mark {
+        color: v.$not-par;
+
+        &:hover {
+            color: v.$not-num-bg;
+            font-weight: v.$fw-eb;
+            cursor: pointer;
+            transition: all .1s ease-in-out;
+        }
+    }
+}
+
+/* ====== Notification ====== */
+.notification {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    background-color: v.$not-unread;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    .avatar {
+        max-width: 2.5rem;
+    }
+
+    .content {
+        display: grid;
+        gap: 0.125rem;
+
+        .text {
+            color: v.$not-par;
+            line-height: 1.325;
+
+            .name {
+                color: v.$name;
+                font-weight: v.$fw-eb;
+                margin-inline-end: 0.25rem;
+            }
+
+            .post {
+                font-weight: v.$fw-eb;
+                margin-inline-start: 0.25rem;
+            }
+        }
+
+        .time {
+            color: v.$time;
+        }
+    }
+}

@@ -2,4 +2,47 @@
 
 body {
     background-color: v.$body-bg;
+    font-family: v.$ff;
+    font-size: 0.875rem;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    background-color: v.$not-cont-bg;
+    width: fit-content;
+    padding: 1.5rem 1rem;
+
+    @media screen and (min-width: v.$min-width) {
+        padding-block: 2.25rem 0;
+        padding-inline: 2.063rem;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+.not-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications {
+    display: grid;
+    row-gap: 0.75rem;
+    margin-block-start: 1.563rem;
+
+    @media screen and (min-width: v.$min-width) {
+        row-gap: 0.625rem;
+        margin-block-start: 2.125rem;
+    }
 }
