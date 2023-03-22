@@ -42,17 +42,20 @@
     display: flex;
     gap: 1rem;
     align-items: start;
-    background-color: v.$not-unread;
     border-radius: 0.5rem;
     padding: 1rem;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+        background-color: v.$not-unread;
+    }
 
     .avatar {
         max-width: 2.5rem;
     }
 
     .content {
-        display: grid;
-        gap: 0.125rem;
 
         .text {
             color: v.$not-par;
@@ -64,6 +67,11 @@
                 margin-inline-end: 0.25rem;
             }
 
+            .group {
+                color: v.$not-num-bg;
+                font-weight: v.$fw-eb;
+            }
+
             .post {
                 font-weight: v.$fw-eb;
                 margin-inline-start: 0.25rem;
@@ -73,5 +81,23 @@
         .time {
             color: v.$time;
         }
+
+        .message {
+            color: v.$not-par;
+            border: 1px solid v.$message-border;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-block: 0.5rem 0;
+            line-height: 1.25;
+        }
     }
+    
+    .chess {
+        max-width: 2.5rem;
+        margin-inline-start: auto;
+    }
+}
+
+.is-unread {
+    background-color: v.$not-unread;
 }

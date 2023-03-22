@@ -38,7 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: hsl(211, 68%, 94%);
+  background-color: hsl(210, 60%, 98%);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 0.875rem;
   display: grid;
@@ -48,12 +48,15 @@ body {
 .container {
   background-color: hsl(0, 0%, 100%);
   width: fit-content;
-  padding: 1.5rem 1rem;
+  padding: 1.25rem 1rem;
 }
 @media screen and (min-width: 44rem) {
   .container {
     padding-block: 2.25rem 0;
     padding-inline: 2.063rem;
+    border-radius: 1rem;
+    margin-block-start: 4rem;
+    box-shadow: 0 0.5rem 1.5rem -1rem black;
   }
 }
 
@@ -77,7 +80,7 @@ body {
 .notifications {
   display: grid;
   row-gap: 0.75rem;
-  margin-block-start: 1.563rem;
+  margin-block-start: 1.5rem;
 }
 @media screen and (min-width: 44rem) {
   .notifications {
@@ -122,16 +125,14 @@ body {
   display: flex;
   gap: 1rem;
   align-items: start;
-  background-color: hsl(210, 60%, 98%);
   border-radius: 0.5rem;
   padding: 1rem;
 }
+.notification:nth-child(1), .notification:nth-child(2), .notification:nth-child(3) {
+  background-color: hsl(210, 60%, 98%);
+}
 .notification .avatar {
   max-width: 2.5rem;
-}
-.notification .content {
-  display: grid;
-  gap: 0.125rem;
 }
 .notification .content .text {
   color: hsl(219, 12%, 42%);
@@ -142,12 +143,32 @@ body {
   font-weight: 800;
   margin-inline-end: 0.25rem;
 }
+.notification .content .text .group {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+}
 .notification .content .text .post {
   font-weight: 800;
   margin-inline-start: 0.25rem;
 }
 .notification .content .time {
   color: hsl(219, 14%, 63%);
+}
+.notification .content .message {
+  color: hsl(219, 12%, 42%);
+  border: 1px solid hsla(219, 12%, 42%, 0.2);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-block: 0.5rem 0;
+  line-height: 1.25;
+}
+.notification .chess {
+  max-width: 2.5rem;
+  margin-inline-start: auto;
+}
+
+.is-unread {
+  background-color: hsl(210, 60%, 98%);
 }
 
 /* Custom properties */
